@@ -1,0 +1,18 @@
+{
+  "$type": "ThunderRoad.ItemSpell, Assembly-CSharp",
+  "id": "SpellDarkChainsMerge",
+  "version": 4,
+  "exludeFromBuild": false,
+  "spellId": "DarkChainsMerge",
+  "localizationId": null,
+  "displayName": "Dark Chains",
+  "description": null,
+  "author": "Unknown",
+  "price": 0.0,
+  "purchasable": false,
+  "tier": 0,
+  "levelRequired": 0,
+  "isStackable": false,
+  "categoryPath": [],
+  "iconEffectId": null
+}

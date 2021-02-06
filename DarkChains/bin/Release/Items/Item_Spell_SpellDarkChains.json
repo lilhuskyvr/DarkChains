@@ -1,0 +1,19 @@
+{
+  "$type": "ThunderRoad.ItemSpell, Assembly-CSharp",
+  "id": "SpellDarkChains",
+  "saveFolder": "Bas",
+  "version": 4,
+  "spellId": "DarkChains",
+  "localizationId": null,
+  "displayName": "DarkChains",
+  "description": null,
+  "author": "Unknown",
+  "price": 0.0,
+  "purchasable": false,
+  "tier": 0,
+  "levelRequired": 0,
+  "isStackable": false,
+  "categoryPath": [],
+  "iconEffectId": "SpellOrbDarkChains",
+  "iconAddress": null
+}
