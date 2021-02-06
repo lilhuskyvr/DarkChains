@@ -1,0 +1,1002 @@
+{
+  "$type": "ThunderRoad.EffectData, Assembly-CSharp",
+  "id": "SpellOrbDarkChains",
+  "saveFolder": "Bas",
+  "version": 0,
+  "groupId": "UI",
+  "volumeDb": 0.0,
+  "modules": [
+    {
+      "$type": "ThunderRoad.EffectModuleMesh, Assembly-CSharp",
+      "intensityCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 1.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 1.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "lifeTime": 5.0,
+      "refreshSpeed": 0.1,
+      "linkBaseColor": "None",
+      "linkTintColor": "Main",
+      "linkEmissionColor": "None",
+      "mainGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "r": 10,
+              "g": 5,
+              "b": 0,
+              "a": 1.0
+            },
+            "time": 0.0
+          },
+          {
+            "color": {
+              "r": -10,
+              "g": -10,
+              "b": -10,
+              "a": 1.0
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 1.0,
+            "time": 0.0
+          },
+          {
+            "alpha": 1.0,
+            "time": 1.0
+          }
+        ],
+        "mode": "Blend"
+      },
+      "secondaryGradient": null,
+      "localScale": {
+        "x": 61.6,
+        "y": 61.6,
+        "z": 61.6
+      },
+      "useSizeCurve": false,
+      "sizeCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 123.2,
+            "outTangent": 123.2,
+            "inWeight": 0.0,
+            "outWeight": 0.333333343,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 0.5,
+            "value": 61.6,
+            "inTangent": 123.2,
+            "outTangent": 123.2,
+            "inWeight": 0.333333343,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "sizeFadeDuration": 0.25,
+      "localRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "useRotationYCurve": false,
+      "rotationYCurve": null,
+      "rotationFadeDuration": 0.0,
+      "meshAddress": "Bas.Mesh.SpellWheel[o_outer_1]",
+      "materials": [
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+Materials+Material, Assembly-CSharp",
+          "materialAddress": "Bas.Material.BallSmokeTile3"
+        }
+      ],
+      "materialProperties": [
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 0.0,
+            "y": -4.0,
+            "z": 0.0,
+            "w": 4.0
+          },
+          "name": "_TimeScale"
+        },
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 8.0,
+            "y": 8.0,
+            "z": 0.0,
+            "w": 0.0
+          },
+          "name": "_MainTex_ST"
+        },
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 0.15,
+            "y": 0.1,
+            "z": 0.0,
+            "w": 2.0
+          },
+          "name": "_BorderScale"
+        }
+      ],
+      "step": "Loop",
+      "stepCustomId": null,
+      "disabled": false
+    },
+    {
+      "$type": "ThunderRoad.EffectModuleMesh, Assembly-CSharp",
+      "intensityCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 1.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 1.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "lifeTime": 5.0,
+      "refreshSpeed": 0.1,
+      "linkBaseColor": "None",
+      "linkTintColor": "Main",
+      "linkEmissionColor": "None",
+      "mainGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "r": 10,
+              "g": 5,
+              "b": 0,
+              "a": 1.0
+            },
+            "time": 0.0
+          },
+          {
+            "color": {
+              "r": 10,
+              "g": 5,
+              "b": 0,
+              "a": 1.0
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 1.0,
+            "time": 0.0
+          },
+          {
+            "alpha": 1.0,
+            "time": 1.0
+          }
+        ],
+        "mode": "Blend"
+      },
+      "secondaryGradient": null,
+      "localScale": {
+        "x": 61.6,
+        "y": 61.6,
+        "z": 61.6
+      },
+      "useSizeCurve": true,
+      "sizeCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 61.6,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.333333343,
+            "weightedMode": "None",
+            "tangentMode": 0
+          },
+          {
+            "time": 0.5,
+            "value": 68.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.333333343,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "sizeFadeDuration": 0.25,
+      "localRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "useRotationYCurve": false,
+      "rotationYCurve": null,
+      "rotationFadeDuration": 0.0,
+      "meshAddress": "Bas.Mesh.SpellWheel[o_outer_2]",
+      "materials": [
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+Materials+Material, Assembly-CSharp",
+          "materialAddress": "Bas.Material.BallSmokeTile3"
+        }
+      ],
+      "materialProperties": [
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 0.0,
+            "y": -4.0,
+            "z": 0.0,
+            "w": 4.0
+          },
+          "name": "_TimeScale"
+        },
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 8.0,
+            "y": 8.0,
+            "z": 0.0,
+            "w": 0.0
+          },
+          "name": "_MainTex_ST"
+        },
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 0.15,
+            "y": 0.1,
+            "z": 0.0,
+            "w": 2.0
+          },
+          "name": "_BorderScale"
+        }
+      ],
+      "step": "Loop",
+      "stepCustomId": null,
+      "disabled": false
+    },
+    {
+      "$type": "ThunderRoad.EffectModuleMesh, Assembly-CSharp",
+      "intensityCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 1.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 1.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "lifeTime": 5.0,
+      "refreshSpeed": 0.1,
+      "linkBaseColor": "None",
+      "linkTintColor": "Main",
+      "linkEmissionColor": "None",
+      "mainGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "r": 10,
+              "g": 5,
+              "b": 0,
+              "a": 1.0
+            },
+            "time": 0.0
+          },
+          {
+            "color": {
+              "r": 10,
+              "g": 5,
+              "b": 0,
+              "a": 1.0
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 1.0,
+            "time": 0.0
+          },
+          {
+            "alpha": 1.0,
+            "time": 1.0
+          }
+        ],
+        "mode": "Blend"
+      },
+      "secondaryGradient": null,
+      "localScale": {
+        "x": 0.09385724,
+        "y": 0.09385724,
+        "z": 0.09385724
+      },
+      "useSizeCurve": false,
+      "sizeCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 0.187714487,
+            "outTangent": 0.187714487,
+            "inWeight": 0.0,
+            "outWeight": 0.333333343,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 0.5,
+            "value": 0.09385724,
+            "inTangent": 0.187714487,
+            "outTangent": 0.187714487,
+            "inWeight": 0.333333343,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "sizeFadeDuration": 0.25,
+      "localRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "useRotationYCurve": false,
+      "rotationYCurve": null,
+      "rotationFadeDuration": 0.0,
+      "meshAddress": "Bas.Mesh.Sphere[GeoSphere]",
+      "materials": [
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+Materials+Material, Assembly-CSharp",
+          "materialAddress": "Bas.Material.BallSmokeTile4"
+        }
+      ],
+      "materialProperties": [
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0,
+            "w": 0.0
+          },
+          "name": "_TimeScale"
+        },
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 2.0,
+            "y": 2.0,
+            "z": 0.0,
+            "w": 0.0
+          },
+          "name": "_MainTex_ST"
+        },
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 50.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.53
+          },
+          "name": "_BorderScale"
+        }
+      ],
+      "step": "Loop",
+      "stepCustomId": null,
+      "disabled": false
+    },
+    {
+      "$type": "ThunderRoad.EffectModuleMesh, Assembly-CSharp",
+      "intensityCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 1.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 1.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "lifeTime": 5.0,
+      "refreshSpeed": 0.1,
+      "linkBaseColor": "None",
+      "linkTintColor": "Main",
+      "linkEmissionColor": "None",
+      "mainGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "r": 10,
+              "g": 10,
+              "b": 10,
+              "a": 1.0
+            },
+            "time": 0.0
+          },
+          {
+            "color": {
+              "r": 10,
+              "g": 10,
+              "b": 10,
+              "a": 1.0
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 1.0,
+            "time": 0.0
+          },
+          {
+            "alpha": 1.0,
+            "time": 1.0
+          }
+        ],
+        "mode": "Blend"
+      },
+      "secondaryGradient": null,
+      "localScale": {
+        "x": 70.0,
+        "y": 70.0,
+        "z": 70.0
+      },
+      "useSizeCurve": false,
+      "sizeCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 140.0,
+            "outTangent": 140.0,
+            "inWeight": 0.0,
+            "outWeight": 0.333333343,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 0.5,
+            "value": 70.0,
+            "inTangent": 140.0,
+            "outTangent": 140.0,
+            "inWeight": 0.333333343,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "sizeFadeDuration": 0.25,
+      "localRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "useRotationYCurve": false,
+      "rotationYCurve": null,
+      "rotationFadeDuration": 0.0,
+      "meshAddress": "Bas.Mesh.SpellWheel[o_rune_2]",
+      "materials": [
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+Materials+Material, Assembly-CSharp",
+          "materialAddress": "Bas.Material.BallSmokeTile3"
+        }
+      ],
+      "materialProperties": [
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0,
+            "w": 40.0
+          },
+          "name": "_TimeScale"
+        },
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 0.0,
+            "w": 0.0
+          },
+          "name": "_MainTex_ST"
+        },
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 50.0,
+            "y": 50.0,
+            "z": 0.0,
+            "w": 1.53
+          },
+          "name": "_BorderScale"
+        }
+      ],
+      "step": "Loop",
+      "stepCustomId": null,
+      "disabled": false
+    },
+    {
+      "$type": "ThunderRoad.EffectModuleMesh, Assembly-CSharp",
+      "intensityCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 1.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 1.0,
+            "outTangent": 1.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "lifeTime": 5.0,
+      "refreshSpeed": 0.1,
+      "linkBaseColor": "None",
+      "linkTintColor": "Main",
+      "linkEmissionColor": "None",
+      "mainGradient": {
+        "colorKeys": [
+          {
+            "color": {
+              "r": 10,
+              "g": 10,
+              "b": 10,
+              "a": 1.0
+            },
+            "time": 0.0
+          },
+          {
+            "color": {
+              "r": 10,
+              "g": 10,
+              "b": 10,
+              "a": 1.0
+            },
+            "time": 1.0
+          }
+        ],
+        "alphaKeys": [
+          {
+            "alpha": 1.0,
+            "time": 0.0
+          },
+          {
+            "alpha": 1.0,
+            "time": 1.0
+          }
+        ],
+        "mode": "Blend"
+      },
+      "secondaryGradient": null,
+      "localScale": {
+        "x": 70.0,
+        "y": 70.0,
+        "z": 70.0
+      },
+      "useSizeCurve": false,
+      "sizeCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 140.0,
+            "outTangent": 140.0,
+            "inWeight": 0.0,
+            "outWeight": 0.333333343,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 0.5,
+            "value": 70.0,
+            "inTangent": 140.0,
+            "outTangent": 140.0,
+            "inWeight": 0.333333343,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "sizeFadeDuration": 0.25,
+      "localRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "useRotationYCurve": false,
+      "rotationYCurve": null,
+      "rotationFadeDuration": 0.0,
+      "meshAddress": "Bas.Mesh.SpellWheel[o_rune_2]",
+      "materials": [
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+Materials+Material, Assembly-CSharp",
+          "materialAddress": "Bas.Material.BallSmokeTile3"
+        }
+      ],
+      "materialProperties": [
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0,
+            "w": 40.0
+          },
+          "name": "_TimeScale"
+        },
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 0.0,
+            "w": 0.0
+          },
+          "name": "_MainTex_ST"
+        },
+        {
+          "$type": "ThunderRoad.EffectModuleMesh+MaterialProperty+Vector, Assembly-CSharp",
+          "value": {
+            "x": 50.0,
+            "y": 50.0,
+            "z": 0.0,
+            "w": 1.53
+          },
+          "name": "_BorderScale"
+        }
+      ],
+      "step": "Loop",
+      "stepCustomId": null,
+      "disabled": false
+    },
+    {
+      "$type": "ThunderRoad.EffectModuleAudio, Assembly-CSharp",
+      "effectLink": "Intensity",
+      "audioContainerAddress": "Bas.AudioGroup.Spell.Gravity.Select",
+      "loopFadeDelay": 0.0,
+      "audioMixer": "UI",
+      "volumeDb": 0.0,
+      "volumeCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.2,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.333333343,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 0.2,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.333333343,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "spatialBlend": 1.0,
+      "randomPlay": false,
+      "randomMinTime": 2.0,
+      "randomMaxTime": 5.0,
+      "randomPitch": false,
+      "pitchCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 34
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "useLowPassFilter": false,
+      "lowPassCutoffFrequencyCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 22000.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 22000.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "lowPassResonanceQCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "useHighPassFilter": false,
+      "highPassCutoffFrequencyCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 10.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 10.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "highPassResonanceQCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "useReverbFilter": false,
+      "reverbDryLevelCurve": {
+        "keys": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          },
+          {
+            "time": 1.0,
+            "value": 0.0,
+            "inTangent": 0.0,
+            "outTangent": 0.0,
+            "inWeight": 0.0,
+            "outWeight": 0.0,
+            "weightedMode": "None",
+            "tangentMode": 0
+          }
+        ],
+        "length": 2,
+        "preWrapMode": "ClampForever",
+        "postWrapMode": "ClampForever"
+      },
+      "minDistance": 1.0,
+      "maxDistance": 500.0,
+      "overrideSteamAudio": false,
+      "steamDirectBinaural": true,
+      "steamInterpolation": "Nearest",
+      "steamPhysicsBasedAttenuation": true,
+      "steamOcclusionMode": "OcclusionWithFrequencyDependentTransmission",
+      "steamOcclusionMethod": "Partial",
+      "steamSourceRadius": 1.0,
+      "steamOcclusionSamples": 16,
+      "steamAirAbsorption": true,
+      "steamDirectMixLevel": 1.0,
+      "steamDipoleWeight": 0.0,
+      "steamDipolePower": 0.0,
+      "steamReflections": true,
+      "steamSimulationType": "Realtime",
+      "steamPhysicsBasedAttenuationForIndirect": true,
+      "steamIndirectMixLevel": 0.5,
+      "steamIndirectBinaural": true,
+      "step": "Custom",
+      "stepCustomId": "Selection",
+      "disabled": false
+    }
+  ]
+}
