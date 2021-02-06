@@ -9,6 +9,12 @@
       "reference": 0,
       "quantity": 1,
       "customValues": []
+    },
+    {
+      "referenceID": "SpellDarkChainsMerge",
+      "reference": 0,
+      "quantity": 1,
+      "customValues": []
     }
   ]
 }

@@ -96,19 +96,34 @@ namespace DarkChains
             [HarmonyPostfix]
             private static void Postfix(SpellTelekinesis spellTelekinesis, HandleRagdoll __instance)
             {
-                var ragdollPart = __instance.ragdollPart;
-
-                if (spellTelekinesis.spellCaster.spellInstance.id == "DarkChains")
-                {
-                    ragdollPart.characterJoint.breakForce = 3000;
-                }
-                
                 try
                 {
-                    Object.Destroy(ragdollPart.gameObject.GetComponent<FrozenRagdollPart>());
+                    var ragdollPart = __instance.ragdollPart;
+                    if (spellTelekinesis.spellCaster.spellInstance.id == "DarkChains")
+                    {
+                        try
+                        {
+                            if (ragdollPart.ragdoll.creature.gameObject.GetComponent<FrozenCreature>() != null)
+                                ragdollPart.characterJoint.breakForce = 4000;
+                        }
+                        catch (Exception exception)
+                        {
+                            Debug.Log(exception.Message);
+                        }
+                    }
+
+                    try
+                    {
+                        Object.Destroy(ragdollPart.gameObject.GetComponent<FrozenRagdollPart>());
+                    }
+                    catch (Exception exception)
+                    {
+                        Debug.Log(exception.Message);
+                    }
                 }
                 catch (Exception exception)
                 {
+                    __instance.GetComponentInParent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     Debug.Log(exception.Message);
                 }
             }
@@ -122,29 +137,41 @@ namespace DarkChains
             private static void Postfix(SpellTelekinesis spellTelekinesis, bool tryThrow, ref bool throwing,
                 HandleRagdoll __instance)
             {
-                var ragdollPart = __instance.ragdollPart;
-
-                if (!throwing && spellTelekinesis.spellCaster.spellInstance.id == "DarkChains")
+                try
                 {
-                    if (ragdollPart.gameObject.GetComponent<FrozenRagdollPart>() == null)
+                    if (!throwing && spellTelekinesis.spellCaster.spellInstance.id == "DarkChains")
                     {
-                       var frozenRagdollPart =  ragdollPart.gameObject.AddComponent<FrozenRagdollPart>();
-
-                       frozenRagdollPart.Init(__instance);
-                    }
-
-                    try
-                    {
-                        var creature = ragdollPart.ragdoll.creature;
-                        if (creature.gameObject.GetComponent<FrozenCreature>() == null)
+                        var ragdollPart = __instance.ragdollPart;
+                        ragdollPart.ResetCharJointBreakForce();
+                        if (ragdollPart.gameObject.GetComponent<FrozenRagdollPart>() == null)
                         {
-                            creature.gameObject.AddComponent<FrozenCreature>();
+                            var frozenRagdollPart = ragdollPart.gameObject.AddComponent<FrozenRagdollPart>();
+
+                            frozenRagdollPart.Init(__instance);
+                        }
+
+                        try
+                        {
+                            var creature = ragdollPart.ragdoll.creature;
+                            if (creature.gameObject.GetComponent<FrozenCreature>() == null)
+                            {
+                                creature.gameObject.AddComponent<FrozenCreature>();
+                            }
+                        }
+                        catch (Exception exception)
+                        {
+                            Debug.Log(exception.Message);
                         }
                     }
-                    catch (Exception exception)
+                }
+                catch (Exception exception)
+                {
+                    if (!throwing && spellTelekinesis.spellCaster.spellInstance.id == "DarkChains")
                     {
-                        Debug.Log(exception.Message);
+                        __instance.GetComponentInParent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                     }
+
+                    Debug.Log(exception.Message);
                 }
             }
         }

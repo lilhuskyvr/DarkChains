@@ -20,8 +20,8 @@ namespace DarkChains
             // _defaultAnimatorSpeed = _creature.animator.speed;
             _creature.brain.Stop();
             _creature.brain.Load("FrozenCreature");
-            // _creature.brain.StopNavigation();
-            // _creature.brain.StopTurn();
+            _creature.brain.StopNavigation();
+            _creature.brain.StopTurn();
             _creature.locomotion.MoveStop();
             _creature.locomotion.speed = 0;
             // _creature.animator.speed = 0;
