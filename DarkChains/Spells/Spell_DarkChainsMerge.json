@@ -1,8 +1,8 @@
 {
   "$type": "DarkChains.SpellDarkChainsMerge, DarkChains",
   "id": "DarkChainsMerge",
+  "saveFolder": "Bas",
   "version": 0,
-  "exludeFromBuild": false,
   "throwEnabled": false,
   "throwEffectId": "SpellGravityDualPush",
   "throwDefaultForce": 15.0,
@@ -29,7 +29,7 @@
         "outTangent": 3.27442265,
         "inWeight": 0.0,
         "outWeight": 0.0408343449,
-        "weightedMode": 0,
+        "weightedMode": "None",
         "tangentMode": 0
       },
       {
@@ -39,7 +39,7 @@
         "outTangent": 0.96728915,
         "inWeight": 0.333333343,
         "outWeight": 0.0589605458,
-        "weightedMode": 0,
+        "weightedMode": "None",
         "tangentMode": 1
       },
       {
@@ -49,7 +49,7 @@
         "outTangent": -0.08240307,
         "inWeight": 0.03873748,
         "outWeight": 0.7560974,
-        "weightedMode": 0,
+        "weightedMode": "None",
         "tangentMode": 1
       },
       {
@@ -59,19 +59,19 @@
         "outTangent": -20.7223454,
         "inWeight": 0.0312693976,
         "outWeight": 0.333333343,
-        "weightedMode": 0,
+        "weightedMode": "None",
         "tangentMode": 0
       }
     ],
     "length": 4,
-    "preWrapMode": 8,
-    "postWrapMode": 8
+    "preWrapMode": "ClampForever",
+    "postWrapMode": "ClampForever"
   },
   "bubbleMinCharge": 0.9,
   "bubbleHandSeparationMaxAngle": 45.0,
   "leftSpellId": "DarkChains",
   "rightSpellId": "DarkChains",
-  "chargeSpeed": 1.0,
+  "chargeSpeed": 0.25,
   "chargeStartHandsRatio": 0.4,
   "stopSpeed": 0.6,
   "stopIfManaDepleted": false,

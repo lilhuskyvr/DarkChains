@@ -1,9 +1,12 @@
-﻿using ThunderRoad;
+﻿using System;
+using ThunderRoad;
+using UnityEngine;
 
- namespace DarkChains
+namespace DarkChains
 {
     public class SpellDarkChains : SpellCastCharge
     {
+        public float ragdollSpeedBoost = 1000.0f;
 
         // ReSharper disable once ParameterHidesMember
         public override void Load(SpellCaster spellCaster)
@@ -12,7 +15,8 @@
 
             spellCaster.telekinesis.grabRagdoll = true;
 
-            ModifyRagdollSpeed(1000);
+            //minimum is 1.0
+            ModifyRagdollSpeed(Mathf.Max(1.0f, ragdollSpeedBoost));
         }
 
         private void ModifyRagdollSpeed(float value)
@@ -25,7 +29,6 @@
 
         public override void Unload()
         {
-
             spellCaster.telekinesis.grabRagdoll = false;
 
             ModifyRagdollSpeed(1 / 1000f);
