@@ -1,9 +1,11 @@
 {
   "$type": "ThunderRoad.ContainerData, Assembly-CSharp",
   "id": "PlayerDefault",
+  "saveFolder": "Bas",
   "version": 1,
-  "exludeFromBuild": false,
-  "content": [
+  "displayName": "",
+  "description": null,
+  "contents": [
     {
       "referenceID": "SpellDarkChains",
       "reference": 0,

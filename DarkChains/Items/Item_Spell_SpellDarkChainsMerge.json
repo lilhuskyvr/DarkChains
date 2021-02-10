@@ -1,5 +1,5 @@
 {
-  "$type": "ThunderRoad.ItemSpell, Assembly-CSharp",
+  "$type": "ThunderRoad.ItemData, Assembly-CSharp",
   "id": "SpellDarkChainsMerge",
   "version": 4,
   "exludeFromBuild": false,
