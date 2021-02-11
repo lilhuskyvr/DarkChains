@@ -45,13 +45,6 @@ namespace DarkChains
                     Debug.Log(exception.Message);
                 }
             }
-
-            //testing
-            if (creature.isPlayer)
-            {
-                WheelMenuSpell.left.Show();
-            }
-            
         }
 
         [HarmonyPatch(typeof(HandleRagdoll))]

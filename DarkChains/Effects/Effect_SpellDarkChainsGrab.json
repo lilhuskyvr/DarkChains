@@ -8,7 +8,8 @@
   "modules": [
     {
       "$type": "ThunderRoad.EffectModuleParticle, Assembly-CSharp",
-      "effectParticleAddress": "Bas.Particle.Spell.Gravity.Grab1",
+      "effectLink": "Intensity",
+      "effectParticleAddress": "Bas.Particle.Spell.Gravity.Grab",
       "intensityCurve": null,
       "renderInLateUpdate": false,
       "goreParticle": false,
@@ -133,199 +134,17 @@
       "collisionUseSecondaryGradient": false,
       "step": "Loop",
       "stepCustomId": null,
-      "disabled": false
-    },
-    {
-      "$type": "ThunderRoad.EffectModuleVfx, Assembly-CSharp",
-      "vfxAddress": "Bas.Vfx.Spell.Gravity.Grab2",
-      "intensityCurve": null,
-      "lifeTime": 5.0,
-      "useSecondaryRenderer": false,
-      "lookAtTarget": false,
-      "mainGradient": {
-        "colorKeys": [
-          {
-            "color": {
-              "r": 0.745283,
-              "g": 0.249599516,
-              "b": 0.745283,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-            "color": {
-              "r": 1.04417181,
-              "g": 0.394891381,
-              "b": 1.64150941,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
-      },
-      "secondaryGradient": null,
-      "mainGradientNoHdr": {
-        "colorKeys": [
-          {
-            "color": {
-              "r": 0.745283,
-              "g": 0.249599516,
-              "b": 0.745283,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-            "color": {
-              "r": 1.04417181,
-              "g": 0.394891381,
-              "b": 1.64150941,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
-      },
-      "secondaryGradientNoHdr": null,
-      "localScale": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0
-      },
-      "useScaleCurve": false,
-      "scaleCurve": null,
-      "usePointCache": false,
-      "pointCacheSkinnedMeshUpdate": false,
-      "pointCacheMapSize": 512,
-      "pointCachePointCount": 4096,
-      "pointCacheSeed": 0,
-      "pointCacheDistribution": "RandomUniformArea",
-      "pointCacheBakeMode": "Triangle",
-      "useMesh": false,
-      "meshAddress": null,
-      "materialProperties": [],
-      "step": "Loop",
-      "stepCustomId": null,
-      "disabled": false
-    },
-    {
-      "$type": "ThunderRoad.EffectModuleVfx, Assembly-CSharp",
-      "vfxAddress": "Bas.Vfx.Spell.Gravity.GrabStart",
-      "intensityCurve": null,
-      "lifeTime": 5.0,
-      "useSecondaryRenderer": false,
-      "lookAtTarget": false,
-      "mainGradient": {
-        "colorKeys": [
-          {
-            "color": {
-              "r": 0.745283,
-              "g": 0.249599516,
-              "b": 0.745283,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-            "color": {
-              "r": 1.04417181,
-              "g": 0.394891381,
-              "b": 1.64150941,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
-      },
-      "secondaryGradient": null,
-      "mainGradientNoHdr": {
-        "colorKeys": [
-          {
-            "color": {
-              "r": 0.745283,
-              "g": 0.249599516,
-              "b": 0.745283,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-            "color": {
-              "r": 1.04417181,
-              "g": 0.394891381,
-              "b": 1.64150941,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
-      },
-      "secondaryGradientNoHdr": null,
-      "localScale": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 1.0
-      },
-      "useScaleCurve": false,
-      "scaleCurve": null,
-      "usePointCache": false,
-      "pointCacheSkinnedMeshUpdate": false,
-      "pointCacheMapSize": 512,
-      "pointCachePointCount": 4096,
-      "pointCacheSeed": 0,
-      "pointCacheDistribution": "RandomUniformArea",
-      "pointCacheBakeMode": "Triangle",
-      "useMesh": false,
-      "meshAddress": null,
-      "materialProperties": [],
-      "step": "Start",
-      "stepCustomId": null,
-      "disabled": false
+      "plateformFilter": "Windows, Android",
+      "isGore": false,
+      "damagerStateFilter": "Inactive, Active",
+      "damageTypeFilter": "Energy, Blunt, Slash, Pierce",
+      "penetrationFilter": "None, Pressure, Hit",
+      "imbuesFilterLogic": "AnyExcept",
+      "imbuesFilter": [],
+      "colliderGroupFilterLogic": "AnyExcept",
+      "colliderGroupsFilter": [],
+      "damagersFilterLogic": "AnyExcept",
+      "damagersFilter": []
     }
   ]
 }
