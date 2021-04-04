@@ -40,74 +40,54 @@
       "linkBaseColor": "None",
       "linkTintColor": "Main",
       "linkEmissionColor": "None",
-      "mainGradient": {
-        "colorKeys": [
-          {
-            "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-            "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
+      "mainColorStart": {
+        "r": 10.0,
+        "g": 10.0,
+        "b": 0.0,
+        "a": 1.0
       },
-      "secondaryGradient": null,
-      "mainGradientNoHdr": {
-        "colorKeys": [
-          {
-            "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-            "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
+      "mainColorEnd": {
+        "r": 10.0,
+        "g": 10.0,
+        "b": 0.0,
+        "a": 1.0
       },
-      "secondaryGradientNoHdr": null,
+      "secondaryColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "mainNoHdrColorStart": {
+        "r": 1.82634962,
+        "g": 1.560007,
+        "b": 3.63367486,
+        "a": 1.0
+      },
+      "mainNoHdrColorEnd": {
+        "r": 1.82634962,
+        "g": 1.560007,
+        "b": 3.63367486,
+        "a": 1.0
+      },
+      "secondaryNoHdrColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryNoHdrColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
       "localScale": {
         "x": 61.6,
         "y": 61.6,
@@ -237,74 +217,54 @@
       "linkBaseColor": "None",
       "linkTintColor": "Main",
       "linkEmissionColor": "None",
-      "mainGradient": {
-        "colorKeys": [
-          {
-            "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-            "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
+      "mainColorStart": {
+        "r": 10.0,
+        "g": 10.0,
+        "b": 0.0,
+        "a": 1.0
       },
-      "secondaryGradient": null,
-      "mainGradientNoHdr": {
-        "colorKeys": [
-          {
-            "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-            "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
+      "mainColorEnd": {
+        "r": 10.0,
+        "g": 10.0,
+        "b": 0.0,
+        "a": 1.0
       },
-      "secondaryGradientNoHdr": null,
+      "secondaryColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "mainNoHdrColorStart": {
+        "r": 1.82634962,
+        "g": 1.560007,
+        "b": 3.63367486,
+        "a": 1.0
+      },
+      "mainNoHdrColorEnd": {
+        "r": 1.82634962,
+        "g": 1.560007,
+        "b": 3.63367486,
+        "a": 1.0
+      },
+      "secondaryNoHdrColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryNoHdrColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
       "localScale": {
         "x": 61.6,
         "y": 61.6,
@@ -434,74 +394,54 @@
       "linkBaseColor": "None",
       "linkTintColor": "Main",
       "linkEmissionColor": "None",
-      "mainGradient": {
-        "colorKeys": [
-          {
-             "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-             "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
+      "mainColorStart": {
+        "r": 10.0,
+        "g": 10.0,
+        "b": 0.0,
+        "a": 1.0
       },
-      "secondaryGradient": null,
-      "mainGradientNoHdr": {
-        "colorKeys": [
-          {
-             "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-             "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
+      "mainColorEnd": {
+        "r": 10.0,
+        "g": 10.0,
+        "b": 0.0,
+        "a": 1.0
       },
-      "secondaryGradientNoHdr": null,
+      "secondaryColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "mainNoHdrColorStart": {
+        "r": 1.09803927,
+        "g": 1.03529418,
+        "b": 5.992157,
+        "a": 1.0
+      },
+      "mainNoHdrColorEnd": {
+        "r": 1.51595151,
+        "g": 1.46412683,
+        "b": 8.47419,
+        "a": 1.0
+      },
+      "secondaryNoHdrColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryNoHdrColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
       "localScale": {
         "x": 0.09385724,
         "y": 0.09385724,
@@ -631,74 +571,54 @@
       "linkBaseColor": "None",
       "linkTintColor": "Main",
       "linkEmissionColor": "None",
-      "mainGradient": {
-        "colorKeys": [
-          {
-             "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 10.0,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-              "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 10.0,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
+      "mainColorStart": {
+        "r": 10.0,
+        "g": 10.0,
+        "b": 0.0,
+        "a": 1.0
       },
-      "secondaryGradient": null,
-      "mainGradientNoHdr": {
-        "colorKeys": [
-          {
-             "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 10.0,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-              "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 10.0,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
+      "mainColorEnd": {
+        "r": 10.0,
+        "g": 10.0,
+        "b": 0.0,
+        "a": 1.0
       },
-      "secondaryGradientNoHdr": null,
+      "secondaryColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "mainNoHdrColorStart": {
+        "r": 1.15068567,
+        "g": 1.05863082,
+        "b": 1.75824773,
+        "a": 1.0
+      },
+      "mainNoHdrColorEnd": {
+        "r": 1.62075591,
+        "g": 1.48957682,
+        "b": 2.48653769,
+        "a": 1.0
+      },
+      "secondaryNoHdrColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryNoHdrColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
       "localScale": {
         "x": 70.0,
         "y": 70.0,
@@ -827,10 +747,54 @@
       },
       "renderInLateUpdate": false,
       "goreParticle": false,
-      "mainGradient": null,
-      "secondaryGradient": null,
-      "mainGradientNoHdr": null,
-      "secondaryGradientNoHdr": null,
+      "mainColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "mainColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "mainNoHdrColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "mainNoHdrColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryNoHdrColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryNoHdrColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
       "localScale": {
         "x": 0.55936,
         "y": 0.55936,
@@ -920,74 +884,54 @@
       "linkBaseColor": "None",
       "linkTintColor": "Main",
       "linkEmissionColor": "None",
-      "mainGradient": {
-        "colorKeys": [
-          {
-              "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-              "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
+      "mainColorStart": {
+        "r": 10.0,
+        "g": 10.0,
+        "b": 10.0,
+        "a": 1.0
       },
-      "secondaryGradient": null,
-      "mainGradientNoHdr": {
-        "colorKeys": [
-          {
-              "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 0.0
-          },
-          {
-              "color": {
-              "r": 10.0,
-              "g": 10.0,
-              "b": 0.0,
-              "a": 1.0
-            },
-            "time": 1.0
-          }
-        ],
-        "alphaKeys": [
-          {
-            "alpha": 1.0,
-            "time": 0.0
-          },
-          {
-            "alpha": 1.0,
-            "time": 1.0
-          }
-        ],
-        "mode": "Blend"
+      "mainColorEnd": {
+        "r": 10.0,
+        "g": 10.0,
+        "b": 10.0,
+        "a": 1.0
       },
-      "secondaryGradientNoHdr": null,
+      "secondaryColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "mainNoHdrColorStart": {
+        "r": 0.9131748,
+        "g": 0.789515734,
+        "b": 1.81683743,
+        "a": 1.0
+      },
+      "mainNoHdrColorEnd": {
+        "r": 1.28395033,
+        "g": 1.10290134,
+        "b": 2.5693965,
+        "a": 1.0
+      },
+      "secondaryNoHdrColorStart": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "secondaryNoHdrColorEnd": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
       "localScale": {
         "x": 70.0,
         "y": 70.0,

@@ -3,7 +3,7 @@
   "id": "DarkChains",
   "saveFolder": "Bas",
   "version": 0,
-  "ragdollSpeedBoost": 1.0,
+  "ragdollSpeedBoost": 500.0,
   "halfSphereRadius": 2.0,
   "pushMaxForce": 12.0,
   "pushForceOnPlayer": 0.3,
