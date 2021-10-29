@@ -1,0 +1,22 @@
+{
+  "$type": "ThunderRoad.ContainerData, Assembly-CSharp",
+  "id": "PlayerDefault",
+  "saveFolder": "Bas",
+  "version": 1,
+  "displayName": "",
+  "description": null,
+  "contents": [
+    {
+      "referenceID": "SpellDarkChains",
+      "reference": 0,
+      "quantity": 1,
+      "customValues": []
+    },
+    {
+      "referenceID": "SpellDarkChainsMerge",
+      "reference": 0,
+      "quantity": 1,
+      "customValues": []
+    }
+  ]
+}

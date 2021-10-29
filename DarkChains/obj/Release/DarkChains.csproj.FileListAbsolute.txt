@@ -111,3 +111,6 @@ D:\Steam\steamapps\common\Blade & Sorcery\BladeAndSorcery_Data\StreamingAssets\M
 D:\Steam\steamapps\common\Blade & Sorcery\BladeAndSorcery_Data\StreamingAssets\Mods\DarkChains\Spells\Spell_DarkChainsMerge.json
 D:\Steam\steamapps\common\Blade & Sorcery\BladeAndSorcery_Data\StreamingAssets\Mods\DarkChains\Items\Item_Spell_SpellDarkChainsMerge.json
 D:\Steam\steamapps\common\Blade & Sorcery\BladeAndSorcery_Data\StreamingAssets\Mods\DarkChains\Effects\Effect_SpellDarkChainsGrab.json
+D:\Projects\RiderProjects\DarkChains\DarkChains\obj\Release\DarkChains.csprojResolveAssemblyReference.cache
+D:\Projects\RiderProjects\DarkChains\DarkChains\obj\Release\DarkChains.dll
+D:\Projects\RiderProjects\DarkChains\DarkChains\obj\Release\DarkChains.pdb

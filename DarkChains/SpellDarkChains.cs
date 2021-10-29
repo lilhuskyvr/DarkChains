@@ -1,17 +1,16 @@
-﻿using System;
-using ThunderRoad;
+﻿using ThunderRoad;
 using UnityEngine;
+// ReSharper disable ParameterHidesMember
 
 namespace DarkChains
 {
     public class SpellDarkChains : SpellCastCharge
     {
         public float ragdollSpeedBoost = 1000.0f;
-
-        // ReSharper disable once ParameterHidesMember
-        public override void Load(SpellCaster spellCaster)
+        
+        public override void Load(SpellCaster spellCaster, Level level)
         {
-            base.Load(spellCaster);
+            base.Load(spellCaster, level);
 
             spellCaster.telekinesis.grabRagdoll = true;
 

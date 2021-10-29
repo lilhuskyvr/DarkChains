@@ -12,7 +12,7 @@ namespace DarkChains
         private void Start()
         {
             _ragdollPart = GetComponent<RagdollPart>();
-            _ragdollPart.rb.constraints = RigidbodyConstraints.FreezeAll;
+            _ragdollPart.rb.isKinematic = true;
         }
 
         public void Init(HandleRagdoll handleRagdoll)
@@ -24,7 +24,7 @@ namespace DarkChains
 
         private void OnDestroy()
         {
-            _ragdollPart.rb.constraints = RigidbodyConstraints.None;
+            _ragdollPart.rb.isKinematic = false;
             _ragdollGripEffect.End();
         }
     }
