@@ -17,7 +17,8 @@ namespace DarkChains
             _defaultCreatureBrainId = _creature.brain.instance.id;
             _defaultLocomotionSpeed = _creature.locomotion.speed;
             _creature.brain.Stop();
-            _creature.brain.Load("FrozenCreature");
+            _creature.StopAnimation(true);
+            // _creature.brain.Load("FrozenCreature");
             _creature.locomotion.MoveStop();
             _creature.locomotion.speed = 0;
         }

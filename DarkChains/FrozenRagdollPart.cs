@@ -17,8 +17,17 @@ namespace DarkChains
 
         public void Init(HandleRagdoll handleRagdoll)
         {
-            _ragdollGripEffectData = Catalog.GetData<EffectData>("SpellDarkChainsGrab");
+            _ragdollGripEffectData = Catalog.GetData<EffectData>("SpellGravityGrab");
+            //remove audio
             _ragdollGripEffect = _ragdollGripEffectData.Spawn(handleRagdoll.transform);
+            foreach (var effect in _ragdollGripEffect.effects)
+            {
+                if (effect is EffectAudio)
+                {
+                    //mute
+                    (effect as EffectAudio).audioSource.volume = 0;
+                }
+            }
             _ragdollGripEffect.Play();
         }
 
