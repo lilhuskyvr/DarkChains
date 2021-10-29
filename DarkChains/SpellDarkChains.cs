@@ -1,19 +1,20 @@
-﻿using System;
-using ThunderRoad;
+﻿using ThunderRoad;
 using UnityEngine;
+// ReSharper disable ParameterHidesMember
 
 namespace DarkChains
 {
     public class SpellDarkChains : SpellCastCharge
     {
         public float ragdollSpeedBoost = 1000.0f;
-
-        // ReSharper disable once ParameterHidesMember
-        public override void Load(SpellCaster spellCaster)
+        private float _defaultRagdollSpeed;
+        
+        public override void Load(SpellCaster spellCaster, Level level)
         {
-            base.Load(spellCaster);
+            base.Load(spellCaster, level);
 
             spellCaster.telekinesis.grabRagdoll = true;
+            _defaultRagdollSpeed = spellCaster.telekinesis.followRagdollSpeedCurve.keys[1].value;
 
             //minimum is 1.0
             ModifyRagdollSpeed(Mathf.Max(1.0f, ragdollSpeedBoost));
@@ -22,16 +23,25 @@ namespace DarkChains
         private void ModifyRagdollSpeed(float value)
         {
             var ragdollSpeedCurve = spellCaster.telekinesis.followRagdollSpeedCurve.keys[1];
-            ragdollSpeedCurve.value *= value;
+            ragdollSpeedCurve.value = value;
             spellCaster.telekinesis.followRagdollSpeedCurve.RemoveKey(1);
             spellCaster.telekinesis.followRagdollSpeedCurve.AddKey(ragdollSpeedCurve);
         }
-
+        
+        private void ResetRagdollSpeed()
+        {
+            var ragdollSpeedCurve = spellCaster.telekinesis.followRagdollSpeedCurve.keys[1];
+            ragdollSpeedCurve.value = _defaultRagdollSpeed;
+            spellCaster.telekinesis.followRagdollSpeedCurve.RemoveKey(1);
+            spellCaster.telekinesis.followRagdollSpeedCurve.AddKey(ragdollSpeedCurve);
+        }
+        
+        
         public override void Unload()
         {
             spellCaster.telekinesis.grabRagdoll = false;
 
-            ModifyRagdollSpeed(1 / 1000f);
+            ResetRagdollSpeed();
 
             base.Unload();
         }

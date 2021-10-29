@@ -19,7 +19,7 @@ namespace DarkChains
 
             if (distance >= handExitDistance)
             {
-                foreach (var creature in Creature.list)
+                foreach (var creature in Creature.allActive)
                 {
                     foreach (var part in creature.ragdoll.parts)
                     {

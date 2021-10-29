@@ -5,6 +5,9 @@ using HarmonyLib;
 using ThunderRoad;
 using UnityEngine;
 using Object = UnityEngine.Object;
+// ReSharper disable InconsistentNaming
+// ReSharper disable UnusedType.Local
+// ReSharper disable UnusedMember.Local
 
 namespace DarkChains
 {
@@ -12,7 +15,7 @@ namespace DarkChains
     {
         private Harmony _harmony;
 
-        public override IEnumerator OnLoadCoroutine(Level level)
+        public override IEnumerator OnLoadCoroutine()
         {
             try
             {
@@ -28,7 +31,7 @@ namespace DarkChains
 
             EventManager.onCreatureSpawn += EventManagerOnonCreatureSpawn;
 
-            return base.OnLoadCoroutine(level);
+            return base.OnLoadCoroutine();
         }
 
         private void EventManagerOnonCreatureSpawn(Creature creature)
@@ -123,7 +126,7 @@ namespace DarkChains
                 }
                 catch (Exception exception)
                 {
-                    __instance.GetComponentInParent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                    __instance.GetComponentInParent<Rigidbody>().isKinematic = false;
                     Debug.Log(exception.Message);
                 }
             }
@@ -134,7 +137,7 @@ namespace DarkChains
         private static class RagdollHandleOnTelekinesisReleasePatch
         {
             [HarmonyPostfix]
-            private static void Postfix(SpellTelekinesis spellTelekinesis, bool tryThrow, ref bool throwing,
+            private static void Postfix(SpellTelekinesis spellTelekinesis, ref bool throwing,
                 HandleRagdoll __instance)
             {
                 try
@@ -168,7 +171,7 @@ namespace DarkChains
                 {
                     if (!throwing && spellTelekinesis.spellCaster.spellInstance.id == "DarkChains")
                     {
-                        __instance.GetComponentInParent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                        __instance.GetComponentInParent<Rigidbody>().isKinematic = true;
                     }
 
                     Debug.Log(exception.Message);
