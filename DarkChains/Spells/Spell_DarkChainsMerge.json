@@ -71,7 +71,7 @@
   "bubbleHandSeparationMaxAngle": 45.0,
   "leftSpellId": "DarkChains",
   "rightSpellId": "DarkChains",
-  "chargeSpeed": 0.25,
+  "chargeSpeed": 25,
   "chargeStartHandsRatio": 0.4,
   "stopSpeed": 0.6,
   "stopIfManaDepleted": false,

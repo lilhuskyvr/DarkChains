@@ -48,7 +48,7 @@
   "grabbedFireMaxCharge": 0.5,
   "chargeMinHaptic": 0.05,
   "chargeMaxHaptic": 0.3,
-  "allowThrow": true,
+  "allowThrow": false,
   "throwEffectId": "SpellTelekinesisPush",
   "throwMinCharge": 0.5,
   "allowSpray": false,

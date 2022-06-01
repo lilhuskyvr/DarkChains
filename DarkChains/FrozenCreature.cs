@@ -7,7 +7,6 @@ namespace DarkChains
     public class FrozenCreature : MonoBehaviour
     {
         private Creature _creature;
-        private float _defaultLocomotionSpeed;
         private string _defaultCreatureBrainId;
 
         private void Awake()
@@ -15,12 +14,11 @@ namespace DarkChains
             _creature = GetComponent<Creature>();
 
             _defaultCreatureBrainId = _creature.brain.instance.id;
-            _defaultLocomotionSpeed = _creature.locomotion.speed;
             _creature.brain.Stop();
             _creature.StopAnimation(true);
             // _creature.brain.Load("FrozenCreature");
             _creature.locomotion.MoveStop();
-            _creature.locomotion.speed = 0;
+            _creature.locomotion.SetSpeedModifier(this, 0, 0, 0, 0, 0);
         }
 
         private void Update()
@@ -36,7 +34,7 @@ namespace DarkChains
         private void OnDestroy()
         {
             _creature.brain.Load(_defaultCreatureBrainId);
-            _creature.locomotion.speed = _defaultLocomotionSpeed;
+            _creature.locomotion.ClearSpeedModifiers();
         }
     }
 }

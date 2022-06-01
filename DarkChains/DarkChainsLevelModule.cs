@@ -5,6 +5,7 @@ using HarmonyLib;
 using ThunderRoad;
 using UnityEngine;
 using Object = UnityEngine.Object;
+
 // ReSharper disable InconsistentNaming
 // ReSharper disable UnusedType.Local
 // ReSharper disable UnusedMember.Local
@@ -107,7 +108,7 @@ namespace DarkChains
                         try
                         {
                             if (ragdollPart.ragdoll.creature.gameObject.GetComponent<FrozenCreature>() != null)
-                                ragdollPart.characterJoint.breakForce = 4000;
+                                ragdollPart.characterJoint.breakForce = 20000;
                         }
                         catch (Exception exception)
                         {

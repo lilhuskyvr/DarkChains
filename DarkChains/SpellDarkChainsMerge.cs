@@ -21,11 +21,13 @@ namespace DarkChains
             {
                 foreach (var creature in Creature.allActive)
                 {
+                    if (creature.state == Creature.State.Dead)
+                        continue;
                     foreach (var part in creature.ragdoll.parts)
                     {
                         try
                         {
-                            Object.Destroy(part.gameObject.GetComponent<FrozenRagdollPart>());
+                            part.gameObject.GetComponent<FrozenRagdollPart>().Quarter();
                         }
                         catch (Exception exception)
                         {
